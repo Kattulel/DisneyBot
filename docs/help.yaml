@@ -1,0 +1,66 @@
+help:
+  type: text
+  args: command
+  description: get detailed information about a command
+
+reddit:
+  type: image
+  args: subreddit <keywords>
+  description: get a random image from a subreddit, **keywords** are optional
+  detailed: searching in the subreddit __cats__ for a pic with the keywords __fat__
+  example: reddit cats fat
+
+birb:
+  type: image
+  args:
+  description: get a birb pic / meme
+
+cat:
+  type: image
+  args:
+  description: get a random cat pic
+
+food:
+  type: image
+  args:
+  description: get a random food porn pic
+
+e621:
+  type: image
+  args: tag1 tag2 tag3...
+  description: get a random image from e621, use -tag to exclude something.
+  detailed: searching for an image with the tag __macro__, excluding __female__ and __mlp__
+  example: e621 macro -female -mlp
+
+macro:
+  type: image
+  args:
+  description: get a random macro pic from e621
+
+say:
+  type: audio
+  args: <?> message
+  description: make googleTTS say stuff! replace **?** if you know the langcode
+
+sayslow:
+  type: audio
+  args: <?> message
+  description: same as **!say**, but slowly.
+
+play:
+  type: audio
+  args: volume youtube_link
+  description: Make the bot play a song. VolRange = 0.1 ~ 1.5
+
+stop:
+  type: audio
+  args:
+  description: The bot will stop playing and leave the channel
+
+# command:
+# type:
+#  args:
+#  description:
+
+# detailed
+# example
